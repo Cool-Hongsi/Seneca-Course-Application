@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin-top:3px;
+    padding:10px;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+html{
+    background-color: #A61414;
+}
+
+.mainContainer{
+    display:inline-flex;
+    width:95vw; 
+    height:88vh;
+    max-height: 88vh;
+    margin: auto;
+}
+
+.leftsection{
+    width:20%;
+    /* margin-right:30px; */
+    /* put scroll */
+    overflow: hidden;
+    text-align: center;
+    border-right-color: #A61414;
+    border-right-style: dashed;
+    padding-left: 0;
+}
+
+.rightsection{
+    width:80%;
+    /* put scroll */
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#myInput {
+    width: 100%;
+    font-size: 13px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    background-color: #EAECEE;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 8px;
+}
+  
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+  
+#myTable tr {
+    border-bottom: 1px solid #ddd;
+}
+  
+#myTable tr.header{
+    background-color: white;
+    color: #A61414;
+    font-size:14px;
+}
+
+tr:hover {
+    background-color: paleturquoise;
+    transition: background-color 1.5s;
+    font-size:8px;
+}
+
+.card{
+    font-size:12px;
+    border-color: white;
+}
+
+.card-header{
+    background-color: #C0392B;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    height: 60px;
+    padding-top: 0;
+}
+
+.btn-link{
+    text-decoration-line: none;
+    color: white;
+    margin: auto;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: white;
+}
+
+input[type='submit']{
+    width: 80px;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+input[type='submit']:hover{
+    background-color:greenyellow;
+    color:black;
+    transition: background-color 0.5s;
+}

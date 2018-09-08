@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Seneca
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel="stylesheet", href="css/result.css")
+  body
+    script#dsq-count-scr(src="//helloseneca.disqus.com/count.js", async)
+    .container
+        .d-flex.justify-content-end.mt-5
+            a.btn.btn-info(role="button", href="/main") Back
+        h1.text-danger
+                = code
+        p.font-weight-bold.h3.mb-4
+                = name 
+        table.table.table-striped.table-bordered
+            thead
+                tr
+                    th(scope='col') Title
+                    th(scope='col') Detail
+            tbody
+                tr
+                    th(scope='row') Semester
+                    td
+                        = semester
+                tr
+                    th(scope='row') Prerequisite
+                    td
+                        = prerequisite
+                tr
+                    th(scope='row') Required
+                    td
+                        = required
+                tr
+                    th(scope='row') Course Type
+                    if isGeneral
+                        td General
+                    else
+                        td Major
+                tr
+                    th(scope='row') Prof Recommend
+                    td
+                        = recommendedProfessor
+                tr
+                    th(scope='row') Description
+                    td
+                        = desc
+        #disqus_thread
+        script.
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://helloseneca.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                }
+            )();
+
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://helloseneca.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                }
+            )();
+        noscript
+            a(href="https://disqus.com/?ref_noscript")

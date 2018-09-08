@@ -1,0 +1,132 @@
+[
+    {
+        "code": "IPC144",
+        "name": "Introduction to Programming Using C",
+        "semester": 1,
+        "prerequisite": null,
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["Ian Tipson", "Fardad Soleimanloo"],
+        "isGeneral": false,
+        "desc": "This course covers the fundamental principles of computer programming, with an emphasis on problem solving strategies using structured programming techniques. The C programming language, which is widely used and forms the syntactical basis for object-oriented languages such as C++, C#, Objective-C, and Java, is used to introduce problem analysis, algorithm design, and program implementation. Students work in a Linux environment."
+    },
+    {
+        "code": "ULI101",
+        "name": "Introduction to UNIX/Linux and Internet",
+        "semester": 1,
+        "prerequisite": null,
+        "required": ["CPD", "CPA", "CNS", "CTY"],
+        "recommendedProfessor": ["Anthony Austin", "Les Czegel"],
+        "isGeneral": false,
+        "desc": "Unix and Linux represent the operating system technology underlying many of the services of the Internet. This subject introduces students to Unix, Linux and the Internet. Students will learn the core utilities to work productively in a Linux environment. Students will do this work using the shell, at the same time learn to configure their login accounts, manipulate data stored in files, effectively use Linux commands and utilities, and write simple shell scripts."
+    },
+    {
+        "code": "DBS201",
+        "name": "Introduction to Database Design and SQL",
+        "semester": 2,
+        "prerequisite": ["IPC144/ULI101"],
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["Danny Roy", "Majid Shahravan"],
+        "isGeneral": false,
+        "desc": "This subject introduces students to relational database design and SQL (Structured Query Language) used with relational databases. Students will be introduced to  relational and object oriented models with a focus on the relational model and its operators. Students will be presented with a methodology for relational database design using Entity Relationship Diagrams and normalization of data. Students will be introduced to a subset of SQL using IBM's DB2 on the iSeries platform. An overview of the functions of the Database Management System (DBMS) and of a Database Administrator (DBA) will also be presented."
+    },
+    {
+        "code": "DCF255",
+        "name": "Data Communication Fundamentals",
+        "semester": 2,
+        "prerequisite": ["IPC144/ULI101/CPR101"],
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["Ron tarr", "Russel Pangborn"],
+        "isGeneral": false,
+        "desc": "This course covers the fundamentals of data communications for computer programmers. Using well-known and widely-used Internet applications and standard networking technology as examples, students will study and learn topics that explain how distributed applications work on a network. In addition, the course's topics and assessments prepare students to design and create software that works effectively in the modern connected world. The intention of the course is to support same-level programming courses, and prepare students for future programming courses which depend upon data communications and networking."
+    },
+    {
+        "code": "OOP345",
+        "name": "Object-Oriented Software Development Using C++",
+        "semester": 3,
+        "prerequisite": ["OOP244"],
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["Christopher Szalwinski", "John Blair"],
+        "isGeneral": false,
+        "desc": "This subject expands the student's skill-set in object-oriented programming and introduces the student to threaded programming.  The student learns to model relationships between classes using containers, inheritance hierarchies and polymorphism in the C++ programming language and to write C++ programs that execute on multiple threads."
+    },
+    {
+        "code": "SYS366",
+        "name": "Requirements Gathering Using OO Models",
+        "semester": 3,
+        "prerequisite": ["IPC144", "EAC150"],
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["John Kucharczuk", "Tevin Apenteng"],
+        "isGeneral": false,
+        "desc": "This subject focuses on the techniques and tools involved in gathering requirements for business systems that will solve business stakeholders' processing problems. Students will be introduced to system development life cycles, interface design, and will learn how to use research, observation, interviews, prototypes and feedback to gather stakeholders' requirements. Students will also learn how to document requirements in both business and systems use case diagrams using the Unified Modeling Language (UML) and the Rational Rose modeling tool. They will learn to write the use case descriptions, both business and systems. An in-depth case study will be used throughout the subject to allow students to apply what they learn."
+    },
+    {
+        "code": "BCI433",
+        "name": "IBM Business Computing",
+        "semester": 4,
+        "prerequisite": ["OOP345", "DBS301"],
+        "required": ["CPD", "CPA"],
+        "recommendedProfessor": ["Mohamed Kassim"],
+        "isGeneral": false,
+        "desc": "This course introduces business information technology on the IBM midrange family of computers running the IBM i operating system. Students will utilize an object-based architecture using IBM i tools to create business applications. These applications will be developed using the DB2 relational database, Control Language commands and programming, and the business-oriented RPGLE programming language. To demonstrate the heterogeneous systems support available on the IBM i platform, students will investigate the Integrated File System, which supports non-native file systems, desktop connectivity tools, and support for mobile application development."
+    },
+    {
+        "code": "EAC397",
+        "name": "Business Report Writing",
+        "semester": 4,
+        "prerequisite": ["EAC150"],
+        "required": ["CPA", "CPD", "CNS", "CTY"],
+        "recommendedProfessor": ["Stu Evans", "Phillip Dimitroff", "Shannon Watson"],
+        "isGeneral": false,
+        "desc": "This business communications course for Computer Studies students builds on the written and oral communications, teamwork, personal management and critical thinking skills developed in earlier courses in the CPA/CPD/CPAC/CNS/CTY programs. Through team and individual projects with a program focus, students will learn the essentials of career management, as well as practise the skills that they will need in the workplace to communicate effectively with customers, co-workers and management."
+    },
+    {
+        "code": "JAC444",
+        "name": "Introduction to Java for C++ Programmers",
+        "semester": 4,
+        "prerequisite": ["OOP345"],
+        "required": ["CPA", "CPD"],
+        "recommendedProfessor": ["Reza Khojasteh", "Mehrnaz Zhian"],
+        "isGeneral": false,
+        "desc": "This business communications course for Computer Studies students builds on the written and oral communications, teamwork, personal management and critical thinking skills developed in earlier courses in the CPA/CPD/CPAC/CNS/CTY programs. Through team and individual projects with a program focus, students will learn the essentials of career management, as well as practise the skills that they will need in the workplace to communicate effectively with customers, co-workers and management."
+    },
+    {
+        "code": "ACC427",
+        "name": "PC Applications and Accounting Software",
+        "semester": 3,
+        "prerequisite": ["ACC120"],
+        "required": ["APP"],
+        "recommendedProfessor": ["Debbie Looije"],
+        "isGeneral": false,
+        "desc": "This course is designed to develop the student's skill in the analysis and recording of financial accounting transactions using computerized accounting software - for example, SAGE 50 and/or QuickBooks. Students will create and maintain electronic accounting records and prepare financial reports for sole proprietorships and corporations in accordance with generally accepted accounting principles."
+    },
+    {
+        "code": "MTH290",
+        "name": "Mathematics - Functions and Relations",
+        "semester": 2,
+        "prerequisite": ["ALG190"],
+        "required": ["FPN"],
+        "recommendedProfessor": ["Stu Evans", "Brian Davis"],
+        "isGeneral": false,
+        "desc": "Mathematics 290 is a continuation of ALG190. Students taking this course should be able to identify and relate to technological problems. The ability to solve word problems is a crucial component of this course. Students will be required to focus on the interpretation of data presented in word problems and then convert the information into mathematical procedures that lead to the required solution. Emphasis will be placed on solving practical problems related to the field of fire protection engineering."
+    },
+    {
+        "code": "HIS201",
+        "name": "World War II - Historical & Cultural Perspectives",
+        "semester": null,
+        "prerequisite": ["EAC149/EAP500"],
+        "required": null,
+        "recommendedProfessor": ["Mark Brownlie"],
+        "isGeneral": true,
+        "desc": "World War II was the most significant event of the twentieth century; today, it remains a refrence point for current events. Even the veterans of this conflict steadily die off, the War continues to provoke historians, philosophers, artists, and writers as it has practically since its beginning in September 1939. This course will deal with the social, political, and military history of the War. Moreover, viewing films (made both during and after the war) and reading poetry, fiction, and non-fiction will help us gain perspective on various aspects of the conflict and better appreciate the cultural significance of the War."
+    },
+    {
+        "code": "NAT160",
+        "name": "Natural Science: Nutrition",
+        "semester": null,
+        "prerequisite": ["EAC149/EAP500"],
+        "required": null,
+        "recommendedProfessor": ["Sheryl Minnett"],
+        "isGeneral": true,
+        "desc": "This subject introduces students to the science of nutrition, making connections between the food we eat, the nutrients we need, and the roles they play in maintaining optimal health. Students will learn how to evaluate food labels and how to achieve adequate nutrient intake, while considering various diets and dietary restrictions.They will gain insight into the ways our food choices can increase or decrease the risk of illness and chronic disease.  Food additives, nutritional claims, trends and controversies will also be explored and critically evaluated."
+    }
+]

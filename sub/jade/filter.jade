@@ -1,0 +1,99 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Seneca
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel="stylesheet", href="css/filter.css")
+  body
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+    script.
+      function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[1]; // [0] -> First td / [1] -> Second td..
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    .p-3.mb-2.bg-dark.text-white Hello,  
+      = userName
+    .d-flex.justify-content-end
+      a.btn.btn-danger(role="button", href="/logout") Logout
+    div.mainContainer
+      div.leftsection
+        input#myInput(type='text', onkeyup='myFunction()', placeholder='Search for code..')
+        br
+        form(action='/filter', method='post')
+          #accordionExample.accordion
+            .card
+              #headingOne.card-header
+                h5.mb-0
+                  button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                    |  Semester
+              #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                .card-body
+                    label(for='1') 1
+                    input(type='checkbox', name='semester', value='1')
+                    label(for='2') 2
+                    input(type='checkbox', name='semester', value='2')
+                    br
+                    label(for='3') 3
+                    input(type='checkbox', name='semester', value='3')
+                    label(for='4') 4
+                    input(type='checkbox', name='semester', value='4')
+                    br
+                    label(for='5') 5
+                    input(type='checkbox', name='semester', value='5')
+                    label(for='6') 6
+                    input(type='checkbox', name='semester', value='6')
+                    br
+                    br
+                    input(type='submit' value="submit" class='submitbtn')
+            .card
+              #headingTwo.card-header
+                h5.mb-0
+                  button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | Course Type
+              #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+                .card-body
+                    label(for='general') General
+                    input(type='checkbox', name='isgeneral', value='true')
+                    br
+                    label(for='professional') Professional
+                    input(type='checkbox', name='isgeneral', value='false')
+                    br
+                    br
+                    input(type='submit' value="submit" class='submitbtn')
+      div.rightsection
+        table#myTable.table.table-striped
+          thead.thead-dark
+            tr
+              th(scope='col').h6 Select
+              th(scope='col').h6 Code
+              th(scope='col').h6 Name
+              th(scope='col').h6 Semester
+          tbody.table-hover
+            each val in data
+              tr
+                td.h6
+                  a.btn.btn-sm.btn-secondary(role='button',href=`/filter/code/${val.code}`) Click
+                td.h6
+                  = val.code
+                td.h6
+                  = val.name
+                td.h6
+                  = val.semester

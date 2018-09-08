@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', type='text/css', href='css/login.css')
+    title Seneca
+  body
+    .container.form.signup-form
+      h2 Sign Up
+      hr
+      if errorMessage
+        .alert.alert-danger
+            strong Error: #{errorMessage}
+            a.btn.btn-danger.btn-sm.msg-btn(href="/signup") Back
+      else if successMessage
+        .alert.alert-success
+            strong Success: #{successMessage}
+            hr
+            a.btn.btn-success.btn-sm.msg-btn(href='/') Login
+      else
+        form(method="post", action="/signup")
+            .row
+                .col-md-12
+                    .form-group
+                        input.form-control#userName(name="userName", type="text", placeholder="User Name", value="" required='')
+            .row
+                .col-md-12
+                    .form-group
+                        input.form-control#password(name="password", type="password", placeholder="Password", required='')
+            .row
+                .col-md-12
+                    .form-group
+                        input.form-control#password2(name="password2", type="password", placeholder="Confirm Password" required='')
+            .row
+                .col-md-12
+                    .form-group
+                        input.form-control#email(name="email", type="email", placeholder="Email Address" required='')
+            input.btn.btn-secondary(type="submit" value="Register")
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')

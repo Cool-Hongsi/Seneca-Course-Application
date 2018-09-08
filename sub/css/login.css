@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+  background-color: #A61414;
+}
+
+.container {
+  margin-top: 1rem;
+  padding: 30px;
+  background-color: white;
+  width: 500px;
+}
+
+.greeting-msg{
+  text-align: center;
+  font-weight: bold;
+  max-height: 10vh;
+  height: 100px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.greeting-msg p{
+  color: #A61414;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form{
+  height: 350px;
+  width: 400px;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn{
+  background-color: #F0264A;
+  border: none;
+  width: 300px;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.form p {
+  color: grey;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+
+.sign-up-tag{
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 300px;
+  margin:auto;
+  background-color: #EBEEF6;
+}
+
+.google-auth {
+  color: white;
+}
+
+.sign-up-tag a {
+  text-decoration: none;
+  color: #F0264A;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.msg-btn{
+  width: 100px;
+  margin-top: 10px;
+}
+
+.signup-form{
+  height:400px;
+  max-height: 400px;
+}
+
+@media (max-width: 500px){
+  .container{
+    width: 300px;
+  }
+  .btn{
+    width: 200px;
+  }
+  .form-control{
+    width: 220px;
+  }
+  .greeting-msg p{
+    font-size: 25px;
+  }
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "seneca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "client-sessions": "^0.8.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "jade": "^1.11.0",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.13",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-http-bearer": "^1.0.1",
+    "pg": "^7.4.3",
+    "sequelize": "^4.38.0"
+  }
+}
